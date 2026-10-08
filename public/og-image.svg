@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  
+  <!-- Gradient Glow Backgrounds -->
+  <circle cx="200" cy="150" r="300" fill="#10B981" opacity="0.15" filter="blur(80px)"/>
+  <circle cx="1000" cy="500" r="350" fill="#06B6D4" opacity="0.15" filter="blur(80px)"/>
+  
+  <!-- Outer Card Frame -->
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="url(#gradient-overlay)" opacity="0.4"/>
+  
+  <!-- Top Badge -->
+  <rect x="110" y="120" width="410" height="42" rx="21" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.4"/>
+  <text x="135" y="146" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#10B981">
+    ⚡ Software Engineer @ Bugema University 🇺🇬
+  </text>
+  
+  <!-- Main Name Title -->
+  <text x="110" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="#FFFFFF">
+    Nalwoga Tracy
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="110" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#10B981">
+    Full-Stack Developer &amp; Systems Engineer
+  </text>
+  
+  <!-- Tagline -->
+  <text x="110" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#94A3B8">
+    Specialized in Spring Boot, Java, React.js &amp; PostgreSQL Enterprise Solutions
+  </text>
+  
+  <!-- Tech Stack Badges -->
+  <g transform="translate(110, 420)">
+    <!-- Java -->
+    <rect x="0" y="0" width="110" height="44" rx="12" fill="#334155"/>
+    <text x="55" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Java</text>
+    
+    <!-- Spring Boot -->
+    <rect x="125" y="0" width="150" height="44" rx="12" fill="#334155"/>
+    <text x="200" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#10B981" text-anchor="middle">Spring Boot</text>
+    
+    <!-- React.js -->
+    <rect x="290" y="0" width="130" height="44" rx="12" fill="#334155"/>
+    <text x="355" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#06B6D4" text-anchor="middle">React.js</text>
+    
+    <!-- PostgreSQL -->
+    <rect x="435" y="0" width="150" height="44" rx="12" fill="#334155"/>
+    <text x="510" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#3B82F6" text-anchor="middle">PostgreSQL</text>
+  </g>
+  
+  <!-- Monogram Logo Badge Right -->
+  <g transform="translate(900, 220)">
+    <rect x="0" y="0" width="170" height="170" rx="40" fill="url(#logo-grad)"/>
+    <rect x="4" y="4" width="162" height="162" rx="36" fill="#0F172A"/>
+    <text x="85" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="900" fill="url(#logo-text-grad)" text-anchor="middle">NT</text>
+  </g>
+  
+  <!-- Footer Link -->
+  <text x="110" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#64748B">
+    https://nalwoga-portifolio.vercel.app
+  </text>
+  
+  <defs>
+    <linearGradient id="gradient-overlay" x1="60" y1="60" x2="1140" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="logo-grad" x1="0" y1="0" x2="170" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="logo-text-grad" x1="0" y1="0" x2="170" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+</svg>

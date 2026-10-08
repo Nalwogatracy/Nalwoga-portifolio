@@ -13,7 +13,7 @@ export const personalInfo = {
   email: "tracynalwoga@gmail.com",
   phone: "+256 784 123 456",
   github: "https://github.com/nalwogatracy",
-  website: "https://nalwogatracy.github.io/",
+  website: "https://nalwoga-portifolio.vercel.app/",
   linkedin: "https://linkedin.com/in/nalwoga-tracy",
   whatsapp: "https://wa.me/256784123456",
   bioShort: "23-year-old Ugandan Software Engineer studying at Bugema University. Focused on enterprise backend systems with Spring Boot, interactive frontend interfaces with React, and optimized PostgreSQL database design.",

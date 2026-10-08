@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nalwoga-portifolio.vercel.app/sitemap.xml
