@@ -59,6 +59,7 @@ The output files will be generated in the `dist/` directory ready for deployment
 ## 👩‍💻 Built for:
 **Nalwoga Tracy**  
 Software Engineer | Bugema University, Uganda 🇺🇬  
-- **Email:** tracynalwoga@gmail.com
+- **Email:** nalwogatracy46@gmail.com
+- **Phone:** +256 770 689 472 (0770689472)
 - **GitHub:** https://github.com/tracynalwoga
 - **LinkedIn:** https://linkedin.com/in/nalwoga-tracy

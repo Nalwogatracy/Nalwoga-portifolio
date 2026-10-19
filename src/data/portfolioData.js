@@ -10,12 +10,12 @@ export const personalInfo = {
   degree: "BSc in Software Engineering",
   graduationYear: "2026",
   status: "Available for Software Engineering Roles & Collaboration",
-  email: "tracynalwoga@gmail.com",
-  phone: "+256 784 123 456",
+  email: "nalwogatracy46@gmail.com",
+  phone: "+256 770 689 472",
   github: "https://github.com/nalwogatracy",
   website: "https://nalwoga-portifolio.vercel.app/",
   linkedin: "https://linkedin.com/in/nalwoga-tracy",
-  whatsapp: "https://wa.me/256784123456",
+  whatsapp: "https://wa.me/256770689472",
   bioShort: "23-year-old Ugandan Software Engineer studying at Bugema University. Focused on enterprise backend systems with Spring Boot, interactive frontend interfaces with React, and optimized PostgreSQL database design.",
   bioLong: `Hello! I'm Nalwoga Tracy, a 23-year-old Ugandan software engineer currently studying at Bugema University. I am passionate about engineering high-impact software systems that empower organizations, local communities, and digital commerce.
 

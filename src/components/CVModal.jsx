@@ -11,77 +11,12 @@ export default function CVModal({ isOpen, onClose, darkMode }) {
   };
 
   const handleDownload = () => {
-    // Generate text/html blob for CV file download
-    const cvContent = `
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>CV - Nalwoga Tracy - Software Engineer</title>
-  <style>
-    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.5; color: #1e293b; padding: 40px; max-width: 800px; margin: 0 auto; }
-    h1 { color: #059669; font-size: 28px; margin-bottom: 4px; }
-    h2 { color: #0f172a; font-size: 18px; border-bottom: 2px solid #10b981; padding-bottom: 4px; margin-top: 24px; }
-    .subtitle { color: #0284c7; font-weight: bold; font-size: 16px; margin-bottom: 12px; }
-    .contact { font-size: 14px; color: #475569; margin-bottom: 20px; }
-    .project { margin-bottom: 16px; }
-    .project-title { font-weight: bold; font-size: 15px; color: #0f172a; }
-    .tech-pill { background: #e0f2fe; color: #0369a1; font-size: 12px; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-right: 4px; }
-    ul { padding-left: 20px; margin-top: 6px; }
-    li { margin-bottom: 4px; font-size: 14px; }
-  </style>
-</head>
-<body>
-  <h1>Nalwoga Tracy</h1>
-  <div class="subtitle">Software Engineer & Full-Stack Developer</div>
-  <div class="contact">
-    Email: ${personalInfo.email} | Phone: ${personalInfo.phone} | Location: ${personalInfo.location}<br>
-    GitHub: ${personalInfo.github} | LinkedIn: ${personalInfo.linkedin}
-  </div>
-
-  <h2>PROFILE SUMMARY</h2>
-  <p>${personalInfo.bioShort}</p>
-
-  <h2>EDUCATION</h2>
-  <p><strong>${educationData.degree}</strong> - ${educationData.institution} (${educationData.period})</p>
-  <p>Status: ${educationData.status}</p>
-
-  <h2>TECHNICAL SKILLS</h2>
-  <p><strong>Backend:</strong> Java, Spring Boot, REST APIs, Spring Security, JWT</p>
-  <p><strong>Frontend:</strong> React.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap</p>
-  <p><strong>Database & Tools:</strong> PostgreSQL, MySQL, Git, GitHub, Postman, Vercel</p>
-
-  <h2>FEATURED PROJECTS</h2>
-  ${projectsData.map(p => `
-    <div class="project">
-      <div class="project-title">${p.title} (${p.category})</div>
-      <p style="font-size: 13px; margin: 2px 0;">${p.description}</p>
-      <div>${p.tech.map(t => `<span class="tech-pill">${t}</span>`).join('')}</div>
-    </div>
-  `).join('')}
-
-  <h2>EXPERIENCE & RESPONSIBILITIES</h2>
-  ${experienceData.map(e => `
-    <div class="project">
-      <div class="project-title">${e.role} - ${e.organization} (${e.period})</div>
-      <ul>
-        ${e.highlights.map(h => `<li>${h}</li>`).join('')}
-      </ul>
-    </div>
-  `).join('')}
-</body>
-</html>
-    `;
-
-    const blob = new Blob([cvContent], { type: 'text/html' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Nalwoga_Tracy_CV.html';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const link = document.createElement('a');
+    link.href = '/Nalwoga_Tracy_CV.pdf';
+    link.download = 'Nalwoga_Tracy_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -104,7 +39,7 @@ export default function CVModal({ isOpen, onClose, darkMode }) {
               className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-md cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              <span>Download CV File</span>
+              <span>Download CV (PDF)</span>
             </button>
             <button
               onClick={handlePrint}
